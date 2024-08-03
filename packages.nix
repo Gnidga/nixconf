@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    mesa-demos
     git
     xorg.xrandr
     hwinfo

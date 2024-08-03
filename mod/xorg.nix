@@ -1,12 +1,15 @@
 {
-# xserver
-  services.xserver.enable = true;
-  services.xserver.windowManager.dwm.enable = true;
+  # Включение X сервера
+  services.xserver = {
+    enable = true;
+    windowManager.dwm.enable = true;
 
-# keymap in X11
-  services.xserver.xkb.layout = "us,ru";
-  services.xserver.xkb.options = "grp:alt_caps_toggle";
+    # Настройки клавиатурной раскладки и переключения
+    xkb.layout = "us,ru";
+    xkb.options = "grp:alt_caps_toggle";
+  };
 
+  # Настройки дисплейного менеджера
   services.displayManager = {
     autoLogin.enable = true;
     autoLogin.user = "q";
