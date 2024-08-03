@@ -4,36 +4,42 @@
   };
 
   environment.systemPackages = with pkgs; [
-    	vim
-	wget
-	git
-	xorg.xrandr
-	hwinfo
-	inxi
-	lshw
-	gh
-	xfce.thunar
-	discord
-	slstatus
-	fastfetch
-	kitty
-	neofetch
-	abiword
-	libreoffice
-	hunspellDicts.uk-ua
-	system-config-printer
-	pciutils
-	zoom-us
-	cnijfilter_4_00	
-	brave
-	dmenu
-	flameshot
-	pavucontrol
-	xorg.xinit
-	xorg.xorgserver
-	openssl
-	telegram-desktop
-
+    vim
+    wget
+    git
+    xorg.xrandr
+    hwinfo
+    inxi
+    lshw
+    gh
+    xfce.thunar
+    discord
+    slstatus
+    fastfetch
+    kitty
+    neofetch
+    vlc
+    abiword
+    libreoffice
+    hunspellDicts.uk-ua
+    system-config-printer
+    pciutils
+    (pkgs.wrapOBS {
+      plugins = with pkgs.obs-studio-plugins; [
+        obs-backgroundremoval
+      ];
+    })
+    xkb-switch
+    zoom-us
+    cnijfilter_4_00
+    brave
+    dmenu
+    flameshot
+    pavucontrol
+    xorg.xinit
+    xorg.xorgserver
+    openssl
+    telegram-desktop
   ];
 
   fonts.packages = with pkgs; [
@@ -48,10 +54,9 @@
   ];
 
   nixpkgs.overlays = [
-    ( final: prev: { 
+    (final: prev: { 
       dwm = prev.dwm.overrideAttrs (_: { src = ./dwm; });
       slstatus = prev.slstatus.overrideAttrs (_: { src = ./slstatus; });
     })
   ];
-
 }
