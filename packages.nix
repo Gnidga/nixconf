@@ -24,11 +24,7 @@
     hunspellDicts.uk-ua
     system-config-printer
     pciutils
-    (pkgs.wrapOBS {
-      plugins = with pkgs.obs-studio-plugins; [
-        obs-backgroundremoval
-      ];
-    })
+    obs-studio
     xkb-switch
     zoom-us
     cnijfilter_4_00
