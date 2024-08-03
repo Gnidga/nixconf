@@ -23,6 +23,13 @@
     abiword
     libreoffice
     hunspellDicts.uk-ua
+    htop
+    fd
+    bat
+    nitrogen
+    ffmpeg
+    clamav
+    xclip
     system-config-printer
     pciutils
     obs-studio

@@ -9,7 +9,7 @@
 	./users.nix
 	./print.nix
 	./nvidia.nix
-	./network.nix
+#	./network.nix
 #	./protonvpn.nix
   ];
 }
