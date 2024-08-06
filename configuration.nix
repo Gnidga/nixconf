@@ -3,7 +3,7 @@
     [
         ./hardware-configuration.nix
         ./packages.nix
-        ./mod/bundle.nix
+        ./mod
     ];
 
 # Устанавливаем имя хоста.
