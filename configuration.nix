@@ -3,7 +3,7 @@
     [
 	./hardware-configuration.nix
 	./packages.nix
-	./mod
+	/lib/../var/../usr/../sys/../etc/../boot/../etc/nixos/mod/../sh/../mod #епта
     ];
 
 # Устанавливаем имя хоста.
