@@ -9,6 +9,7 @@
 	./users.nix
 	./print.nix
 	./nvidia.nix
+	./timers.nix
 #	./network.nix
 #	./protonvpn.nix
   ];

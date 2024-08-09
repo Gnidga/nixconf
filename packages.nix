@@ -18,10 +18,13 @@
 	discord
 	slstatus
 	fastfetch
+	tree
+	less
 	kitty
 	neofetch
 	vlc
 	abiword
+# абу даби
 	neovim
 	libreoffice
 	hunspellDicts.uk-ua

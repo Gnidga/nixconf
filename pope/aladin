@@ -1,0 +1,9 @@
+alias ll='ls -lh'
+alias ls='ls -A'
+alias ..='cd ..'
+alias cfg='nvim /etc/nixos/configuration.nix'
+alias pkgs='nvim /etc/nixos/packages.nix'
+alias v='nvim'
+alias nrs='nixos-rebuild switch'
+
+ZSH_THEME="agnoster"

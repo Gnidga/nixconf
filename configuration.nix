@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }: {
   imports =
     [
-        ./hardware-configuration.nix
-        ./packages.nix
-        ./mod
+	./hardware-configuration.nix
+	./packages.nix
+	./mod
     ];
 
 # Устанавливаем имя хоста.
